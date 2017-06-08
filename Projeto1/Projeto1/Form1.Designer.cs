@@ -37,6 +37,10 @@
             this.labelDist = new System.Windows.Forms.Label();
             this.timerTempoClick = new System.Windows.Forms.Timer(this.components);
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.buttonAnotar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarDistancia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarTamanho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -47,7 +51,7 @@
             this.buttonA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonA.Location = new System.Drawing.Point(390, 150);
+            this.buttonA.Location = new System.Drawing.Point(390, 102);
             this.buttonA.Name = "buttonA";
             this.buttonA.Size = new System.Drawing.Size(20, 20);
             this.buttonA.TabIndex = 0;
@@ -60,7 +64,7 @@
             this.buttonB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonB.Location = new System.Drawing.Point(410, 150);
+            this.buttonB.Location = new System.Drawing.Point(410, 102);
             this.buttonB.Name = "buttonB";
             this.buttonB.Size = new System.Drawing.Size(20, 20);
             this.buttonB.TabIndex = 1;
@@ -95,23 +99,23 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 319);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 13);
+            this.label1.Size = new System.Drawing.Size(133, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Tamanho dos botões:";
+            this.label1.Text = "Tamanho dos botões: W =";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 383);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 13);
+            this.label2.Size = new System.Drawing.Size(152, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Distância entre os botões:";
+            this.label2.Text = "Distância entre os botões: A = ";
             // 
             // labelTam
             // 
             this.labelTam.AutoSize = true;
-            this.labelTam.Location = new System.Drawing.Point(130, 319);
+            this.labelTam.Location = new System.Drawing.Point(150, 319);
             this.labelTam.Name = "labelTam";
             this.labelTam.Size = new System.Drawing.Size(19, 13);
             this.labelTam.TabIndex = 6;
@@ -120,7 +124,7 @@
             // labelDist
             // 
             this.labelDist.AutoSize = true;
-            this.labelDist.Location = new System.Drawing.Point(150, 383);
+            this.labelDist.Location = new System.Drawing.Point(160, 383);
             this.labelDist.Name = "labelDist";
             this.labelDist.Size = new System.Drawing.Size(19, 13);
             this.labelDist.TabIndex = 7;
@@ -147,11 +151,51 @@
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 447);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "ID =  log2( 2*A /  W ) = ";
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(137, 447);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(10, 13);
+            this.labelID.TabIndex = 11;
+            this.labelID.Text = "-";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(17, 464);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(308, 96);
+            this.richTextBox1.TabIndex = 12;
+            this.richTextBox1.Text = "";
+            // 
+            // buttonAnotar
+            // 
+            this.buttonAnotar.Location = new System.Drawing.Point(250, 437);
+            this.buttonAnotar.Name = "buttonAnotar";
+            this.buttonAnotar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAnotar.TabIndex = 13;
+            this.buttonAnotar.Text = "Anotar";
+            this.buttonAnotar.UseVisualStyleBackColor = true;
+            this.buttonAnotar.Click += new System.EventHandler(this.buttonAnotar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.buttonAnotar);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.labelDist);
             this.Controls.Add(this.labelTam);
@@ -184,6 +228,10 @@
         private System.Windows.Forms.Label labelDist;
         private System.Windows.Forms.Timer timerTempoClick;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelID;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button buttonAnotar;
     }
 }
 
