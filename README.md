@@ -19,6 +19,7 @@ Com as Seguintes Bibliotecas:
 * [PyQt](https://nikolak.com/pyqt-qt-designer-getting-started/) 
 * [Mingus](https://bspaans.github.io/python-mingus/)
 * [PySerial](https://pythonhosted.org/pyserial/)
+* [QSynth](https://sourceforge.net/projects/qsynth/)
 * [Outras](https://pypi.python.org/pypi/pip) que possam ser requisitadas durante a execucao.
 
 
