@@ -79,8 +79,8 @@ class Main(QMainWindow, Ui_MainWindow):
 		self.outlinePen.setWidth(1)
 
 		self.circleSilence = self.scene.addEllipse(-100,-100,100,100,self.outlinePen,self.hilightColor)
-		self.circleNota1 = self.scene.addEllipse(-100,100,100,100,self.outlinePen,self.normalColor)
-		self.circleNota2 = self.scene.addEllipse(100,-100,100,100,self.outlinePen,self.normalColor)
+		self.circleNota2 = self.scene.addEllipse(-100,100,100,100,self.outlinePen,self.normalColor)
+		self.circleNota1 = self.scene.addEllipse(100,-100,100,100,self.outlinePen,self.normalColor)
 		self.circleNota3 = self.scene.addEllipse(100,100,100,100,self.outlinePen,self.normalColor)
 		self.textSilence = self.scene.addText("Silencio", QFont("Arial", 12))
 		self.textNota1 = self.scene.addText("Nota 1", QFont("Arial", 12))
