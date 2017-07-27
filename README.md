@@ -1,4 +1,4 @@
-# ihms
+# IHMS - Myo Sound
 Codigos dos projetos desenvolvidos como componentes complementares para aprovação na disciplina de IHMS no curso de Eng. Biomédica da UFU.
 
 ## Software
@@ -22,7 +22,7 @@ Com as Seguintes Bibliotecas:
 * [Outras](https://pypi.python.org/pypi/pip) que possam ser requisitadas durante a execucao.
 
 
-#Licence
+# Licence
 
 Este projeto esta sobre licença MIT. Consulte o arquivo licence para mais informações.
 
