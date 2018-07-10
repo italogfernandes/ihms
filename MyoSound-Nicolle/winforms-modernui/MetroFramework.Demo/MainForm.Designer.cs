@@ -324,11 +324,11 @@
             this.metroLabel24.Location = new System.Drawing.Point(-4, 113);
             this.metroLabel24.Margin = new System.Windows.Forms.Padding(3);
             this.metroLabel24.Name = "metroLabel24";
-            this.metroLabel24.Size = new System.Drawing.Size(92, 19);
+            this.metroLabel24.Size = new System.Drawing.Size(86, 19);
             this.metroLabel24.Style = MetroFramework.MetroColorStyle.Pink;
             this.metroLabel24.StyleManager = this.metroStyleManager;
             this.metroLabel24.TabIndex = 8;
-            this.metroLabel24.Text = "Bianca Nome ";
+            this.metroLabel24.Text = "Bianca Souza";
             this.metroLabel24.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroToolTip.SetToolTip(this.metroLabel24, "Label Tooltip");
             this.metroLabel24.UseStyleColors = false;
